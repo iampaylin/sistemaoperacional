@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistemas operacionais</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#primeiro"><input type="button" value="1"></a>
+        <a href="#segundo"><input type="button" value="2"></a>
+        <a href="#terceiro"><input type="button" value="3"></a>
+        <a href="#quarto"><input type="button" value="4"></a>
+        <a href="#quinto"><input type="button" value="5"></a>
+        <a href="#sexto"><input type="button" value="6"></a>
+    </header>
+
+    <section id="primeiro">
+        <h1>Identificar os conceitos sobre um sistema operacional</h1>
+        <div>
+            <h2>Sistema operacional</h2>
+            <p>O que é sistema operacional? Um programa, ou conjunto de programas.</p>
+            <p>Qual a função do sistema operacional? Servir de intermediário (ou interface) entre o usuário e o hardware, além de gerenciar recursos</p>
+        </div>
+        <div>
+            <h2>Tipos de interação do sistema operacional</h2>
+            <p>Shell: Interação de forma textual</p>
+            <p>GUI: Interação em forma gráfica</p>
+            <p>Invocam os serviços do S.O. por meio das "chamadas ao sistema operacional"</p>
+        </div>
+        <div>
+            <h2>Formas de processsamento do S.O.</h2>
+            <p>Serial (Monoprogramação): Recursos alocados a um único programa</p>
+            <p>Concorrente (Multiprogramação): Recursos dinamicamente Reassociados entre uma coleção de programa em diferentes estágios</p>
+        </div>
+        <div>
+            <h2>Histórico de gerações</h2>
+            <p>1ª Geração (1945 - 1955): Computadores a válvula, ausência de s.o., programação em linguagem de máquina</p>
+            <p>2ª Geração (1955 - 1965): Transistores e sistema em lote (batch)</p>
+            <p>3ª Geração (1965 - 1980): Circuitos integrados e Multiprogramação</p>
+            <p>4ª Geração (1980 - presente): Computadores pessoais</p>
+        </div>
+        <div>
+            <h2>Tipos de sistemas operacionais</h2>
+            <p>Sistema operacional de computadores de grande porte: Mil discos e milhares de gigabytes </p>
+            <p>Sistema operacional de servidores: Servem múltiplos usuários de uma vez e compartilham recurso de hardware e software</p>
+            <p>Sistema operacional de multiprocessadores: Permite mais de uma CPU em um único sistema</p>
+            <p>Sistema operacional de computadores pessoais: Dão suporte a multiprogramação(rodar diversas aplicações "simultaneas"), dezenas de programas iniciados e oferece boa interface ao usuário</p>
+            <p>Sistema operacional de computadores portáteis: é um pequeno computador que cabe no bolso</p>
+            <p>Sistema operacional embarcado: Alocados em dispositivos que não são considerados computadores e não permitem a instalação de software por usuários (DVD, micro-ondas, etc.)</p>
+            <p>Sistema operacional de nós sensores: Os nós são computadores minúsculos que se comunicam entre si e com uma estação-base usando comunicação sem fio</p>
+            <p>Sistema operacional em tempo real: Utiliza o tempo como parametro-chave (Utilizados por serviços militares, aereos, etc.).</p>
+        </div>
+    </section>
+    <section id="segundo">
+        <h1>Conceitos sobre sistemas operacionais</h1>
+        <div>
+            <h2>Processos</h2>
+            <p>Um processo é um programa em execução, cada processo tem seu <b>espaço de endereçamento</b> uma lista de posições na memória de 0 até um máximo que esse processo pode ler e escrever</p>
+            <p>Processo é fundamentalmente um contêiner que armazena todas as informações necessárias para executar um programa</p>
+            <p>Um processo pode criar um ou mais processos (processos filhos)</p>
+        </div>
+        <div>
+            <h2>Espaços de endereçamento</h2>
+            <p>A memória principal do computador armazena programas em execução</p>
+            <p>Sistema operacional simples: permite apenas um programa por vez na memória, já um s.o. mais sofisticado, permite mais programas alocados na memória ao mesmo tempo</p>
+        </div>
+        <div>
+            <h2>Gerenciamento de recursos</h2>
+            <p>A principal tarefa do s.o. é controlar quem está utilizando qual recurso, garantir os pedidos de recursos, medir a utilização e cuidar de pedidos que podem entrar em conflito de diferentes programas de usuários</p>
+            <p>Multiplexação: é o compartilhamento de recursos, seja em tempo ou espaço.</p>
+            <p>Multiplexação no tempo: Cada programa utiliza o recurso por determinado tempo (neste caso o recurso é a CPU)</p>
+            <p>Multiplexação no espaço: Cada programa utiliza uma parte do recurso</p>
+        </div>
+        <div>
+            <h2>Chamadas de sistema</h2>
+            <p>Elas permitem um controle mais eficiente sobre as operações do sistema, são funções utilizadas pelos programas para socilitar a execução de algum serviço ao kernel do sistema</p>
+        </div>
+    </section>
+    <section id="terceiro">
+        <h1>Gerenciamento de processos</h1>
+        <div>
+            <h2>Importante</h2>
+            <p>Interatividade: Considera se o usuário utiliza o sistema computacional</p>
+            <p>Tempo de resposta: Representa o intervalo de tempo decorrido entre um pedido ou solicitação de processamento</p>
+            <p>Tempo de reação: Tempo decorrido entre a solicitação de uma ação e seu efetivo processamento</p>
+            <p>Produtividade (throughput): Tarefas completas por unidade de tempo</p>
+        </div>
+        <div>
+            <h2>Processo computacional</h2>
+            <p>É uma atividade que ocorre em meio computacional, tem duração finita e quantidade limitada de recursos computacionais (atividades manuais ou automaticas dentro de um computador)</p>
+            <p>Os processos computacionais também podem ter processos filhos</p>
+        </div>
+        <div>
+            <h2>Estados dos processos</h2>
+            <p>Três estados básicos de existência de um processo</p>
+            <p>Pronto: processo pode ser executado quando o processador estiver disponível</p>
+            <p>Execução: processo tem suas instruções executadas pelo processador</p>
+            <p>Bloqueado: quando o processo está utilizando um recuso qualquer de entrada e saída</p>
+            <p></p>
+        </div>
+    </section>
+    <section id="quarto">
+        <h1>Gerenciamento de processos II</h1>
+        <div>
+            <h2>Ocorrência de processos: utilização de processos do computador</h2>
+            <p>Dois tipos de processos: <b>sequenciais</b> e <b>paralelos</b></p>
+            <p>Sequenciais: ocorrem um de cada vez, cada um no seu tempo, de forma exclusiva</p>
+            <p>Paralelos: aqueles que ocorrem em determinado intervalo de tempo simultâneamente.</p>
+            <p>3 tipos de processos paralelos: <b>independentes</b>(utilizam recursos distintos e não se envolvem com outros processos), <b>concorrentes</b>(utilizam o mesmo recurso e dependem do sistema operacional definir a ordem na qual os processos usarão o recurso), <b>cooperantes</b>(quando dois ou mais processos utilizam o mesmo recuso para completar uma tarefa)</p>
+        </div>
+    </section>
+    <section id="quinto">
+        <h1>Gerenciamento de processos III</h1>
+        <div>
+            <h2>Threads</h2>
+            <p>Consideradas processos leves, requerem menos recursos de controle do sistema operacional. Podem ser de instrução ou de controle e compartilham espaço de endereço e outras informações com seu processo</p>
+            <p>User threads: São oferecidas por bibliotecas específicas e são implementadas acima do kernel</p>
+            <p>Kernel threads: São suportadas diretamente pelo sistema operacional (nativas)</p>
+        </div>
+        <div>
+            <h2>Motivação da criação de threads</h2>
+            <p>Maior simplicidade para cuidar de tarefas, maior escalonamento para sistemas com múltiplos processadores e o custo operacional do espaço</p>
+            <p>Operações comum entre thread e processo: criar, sair, retomar e suspender</p>
+            <p>A criação de thread não requer que o s.o. inicialize recursos entre os processos-pai e seus threads, então é menos esforço iniciar e terminar um thread comparado a iniciar e terminar um processo</p>
+        </div>
+        <div>
+            <h2>Estados de thread</h2>
+            <ul>
+                <li>Estado nascido</li>
+                <li>Estado pronto (executável)</li>
+                <li>Estado em execução</li>
+                <li>Estado morto</li>
+                <li>Estado bloqueado</li>
+                <li>Estado de espera</li>
+                <li>Estado adormecido</li>
+            </ul>
+        </div>
+    </section>
+    <section id="sexto">
+        <h1>Gerenciamento de processos IV</h1>
+        <div>
+            <h2>Escalonamento de processos</h2>
+            <p>é como os processos são distribuídos para a execução nos processadores (representa a ordem que os processos são executados). O escalonamento deve tratar os processos obtendo os melhores resultados possíveis no sistema.</p>
+        </div>
+        <div>
+            <h2>Objetivos do escalonamento de processos</h2>
+            <p>Ser justo para que todos os processos sejam tratados igualmente (parecido com o processador)</p>
+            <p>Throughput procurando maximizar o número de tarefas processadas</p>
+            <p>Uma tarefa deve ser sempre executada com o mesmo tempo e custo computacional</p>
+            <p>Importante: o escalonamento de processos busca minimizar o tempo de resposta para usuários interativos, maximizar o número de usuários interativos e minimizar a sobrecarga (overhead) onde recursos não são desperdiçados permitindo maior eficiência do sistema</p>
+        </div>
+        <div>
+            <h2>Níveis de escalonamento</h2>
+            <p>Nível alto (escalonamento de tarefas): Determinação de quais tarefas passarão a competir pelos recursos do sistema. Admitidas as tarefas tornam-se processos</p>
+            <p>Nível intermediário: Determinação de quais processos existentes competirão pelo processador, é responsável por administrar a carga do sistema, utilizando suspensão (suspend) e ativação (resume/activate)</p>
+            <p>Nível baixo: Rotinas que determinam qual dos processos ativos, será o próximo que utilizará o processador. Estas tarefas são executadas pelo dispatcher, em linguagem de máquina que se encontra permanentemente na mémoria principal.</p>
+        </div>
+        <div>
+            <h2>Escalonamento preemptivo e não preemptivo</h2>
+            <p>Preemptivo: quando um processo entra na CPU e o mesmo pode ser retirado antes do término de sua execução </p>
+            <p>Não preemptivo: quando um processo entra na CPU ele não pode ser retirado até que seja finalizado</p>
+        </div>
+        <div>
+            <h2>Algoritmos preemptivos e não preemptivos</h2>
+            <p>Algoritmos preemptivos: são mais adequados para sistemas em que múltiplos processos requerem atenção do sistema (sistemas em tempo partido e sistemas em tempo real)</p>
+            <p>Algoritmos não preemptivos: são mais simples e adequados para o processamento não interativo, são mais eficientes e previsíveis quanto ao tempo de entrega de suas tarefas (sistemas batch)</p>
+            <p>Algoritmo cooperativo: Os processos não são interrompidos, mas a preempção (interromper uma tarefa) ocorre quando: o processo efetua uma operação I/O e quando o processo é finalizado.</p>
+        </div>
+    </section>
+</body>
+</html>

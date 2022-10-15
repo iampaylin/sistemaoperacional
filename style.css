@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+input {
+    padding: 8px;
+    margin: 3%;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+section {
+    padding: 10px;
+    border-bottom: 2px solid #000;
+}
+
+h1 {
+    background-color: black;
+    color: #FFF;
+    padding: 2px;
+}
+
+div {
+    border-bottom: 3px solid #000;
+    margin: 3%;
+    padding-bottom: 7px;
+}
+
+p{
+    margin: 10px;
+    font-size: larger
+}
